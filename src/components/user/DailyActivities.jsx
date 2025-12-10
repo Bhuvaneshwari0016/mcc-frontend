@@ -12,7 +12,7 @@ const DailyActivities = () => {
     const fetchActivities = async () => {
         try {
             setLoading(true);
-            const res = await axios.get('http://localhost:5000/api/daily-updates');
+            const res = await axios.get('https://mcc-backend-6wl0.onrender.com/api/daily-updates');
             setActivities(res.data);
         } catch (err) {
             console.error(err);
